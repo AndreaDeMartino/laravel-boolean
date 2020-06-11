@@ -1,0 +1,11 @@
+// Bootstrap 4
+@import '~bootstrap/scss/bootstrap';
+
+//Commons
+@import 'partials/vars';
+@import 'partials/commons';
+@import 'partials/header';
+@import 'partials/footer';
+
+// Modules
+@import 'partials/students';

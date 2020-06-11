@@ -1,0 +1,25 @@
+.main-footer{
+  background: $blue;
+  color: $white;
+}
+
+.nav-footer{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1rem;
+  ul{
+    text-align: right;
+    list-style: none;
+    li{
+      margin-bottom: 1rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        color: $white;
+      }
+    }
+  }
+}
