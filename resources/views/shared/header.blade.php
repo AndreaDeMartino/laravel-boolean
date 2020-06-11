@@ -17,7 +17,7 @@
   
   <header class="main-header">
       <nav class="navbar">
-        <a href="" class="navbar-brand">Boolean</a>
+        <img class="navbar-brand" src="https://www.boolean.careers/images/common/logo.png" alt="bool-logo">
         
         <ul>
 

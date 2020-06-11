@@ -10966,14 +10966,17 @@ p {
 }
 
 .navbar .navbar-brand {
-  color: darkblue;
-  text-decoration: none;
-  text-transform: uppercase;
+  width: 150px;
+  padding-bottom: 30px;
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
+}
+
+.navbar ul li {
+  margin-right: 1rem;
 }
 
 .navbar ul a {
@@ -10982,7 +10985,7 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.875em;
-  color: darkblue;
+  color: #333;
   border-bottom: 2px solid transparent;
   transition: border 0.3s;
 }
@@ -10992,8 +10995,24 @@ p {
   border-bottom-color: lightgreen;
 }
 
+.main-content {
+  color: #1b3c59;
+}
+
+.main-content .jumbo-text-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main-content .jumbo-img img {
+  width: 500px;
+}
+
 .main-footer {
-  background: darkblue;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #1b3c59;
   color: #fff;
 }
 
@@ -11002,7 +11021,13 @@ p {
   justify-content: space-between;
   max-width: 1140px;
   margin: 0 auto;
+  margin-bottom: 20px;
   padding: 1rem;
+  border-bottom: 1px solid #fff;
+}
+
+.nav-footer .footer-brand img {
+  width: 180px;
 }
 
 .nav-footer ul {
