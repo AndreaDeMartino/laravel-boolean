@@ -2,17 +2,17 @@
 
 @section('main-content')
   
-  <h1> {{ $student['nome'] }} </h1>
+  <h1 class="text-center display-4"> {{ $student['nome'] }} </h1>
 
 
 
   {{-- @dump($students) --}}
 
 
-  <div href="{{ route('student.show', ['id' => $student['id'] ]) }}" class="student">
+  <div href="{{ route('student.show', ['id' => $student['id'] ]) }}" class="student text-center">
     <header>
-      <img src="{{ $student['img'] }}" alt="{{ $student['nome'] }}">
-      <div class="info">
+      <img class="rounded-circle" src="{{ $student['img'] }}" alt="{{ $student['nome'] }}">
+      <div class="info mt-5">
         <h3>{{ $student['nome'] }} ({{ $student['eta'] }} anni)</h3>
         <h4>
           {{-- Operatore Ternario : (condizione) ? 'true' : 'false' --}}
