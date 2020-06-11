@@ -5,8 +5,10 @@
  --}}
 
 <footer class="main-footer 
-  {{-- Add position Absloute on footer only on the main page --}}
-  @if ( Request::route()->getName() == 'static-page.home')
+  {{-- Add position Absloute on footer only on statics page --}}
+  @if ( Request::route()->getName() == 'static-page.home' ||
+        Request::route()->getName() == 'static-page.faq' ||
+        Request::route()->getName() == 'static-page.privacy')
     footer-bottom
   @endif ">
   <nav class="nav-footer">
