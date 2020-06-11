@@ -1,7 +1,5 @@
 .main-footer{
   width: 100%;
-  position: absolute;
-  bottom: 0;
   background: $darkblue;
   color: $white;
 }
@@ -11,9 +9,7 @@
   justify-content: space-between;
   max-width: 1140px;
   margin: 0 auto;
-  margin-bottom: 20px;
   padding: 1rem;
-  border-bottom: 1px solid $white;
   .footer-brand{
     img{
       width: 180px;
@@ -32,4 +28,9 @@
       }
     }
   }
+}
+
+.footer-bottom{
+  position: absolute;
+  bottom: 0;
 }

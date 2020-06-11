@@ -4,7 +4,11 @@
   ****************************************************/
  --}}
 
-<footer class="main-footer">
+<footer class="main-footer 
+  {{-- Add position Absloute on footer only on the main page --}}
+  @if ( Request::route()->getName() == 'static-page.home')
+    footer-bottom
+  @endif ">
   <nav class="nav-footer">
     <div class="footer-brand">
       <img src="https://www.boolean.careers/images/common/logo-white.png" alt="">

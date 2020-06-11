@@ -11010,8 +11010,6 @@ p {
 
 .main-footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
   background: #1b3c59;
   color: #fff;
 }
@@ -11021,9 +11019,7 @@ p {
   justify-content: space-between;
   max-width: 1140px;
   margin: 0 auto;
-  margin-bottom: 20px;
   padding: 1rem;
-  border-bottom: 1px solid #fff;
 }
 
 .nav-footer .footer-brand img {
@@ -11045,6 +11041,11 @@ p {
 
 .nav-footer ul li a {
   color: #fff;
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
 }
 
 .students {
