@@ -7,11 +7,13 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     private $students;
+    private $genders;
 
     // Load Students info from config file
     public function __construct(){
         
-        $this->students = config('students');
+        $this->students = config('students.students');
+        $this->genders = config('students.genders');
     }
 
     //Show Students Main Page 
@@ -19,8 +21,9 @@ class StudentController extends Controller
 
         //Declare the variable to use with compact
         $students = $this->students;
+        $genders = $this->genders;
 
-        return view('students.index', compact('students'));
+        return view('students.index', compact('students', 'genders'));
     }
 
     //Show Students Info page
