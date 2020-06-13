@@ -7,7 +7,7 @@
   <div class="students text-center">
     @foreach($students as $student)
       {{-- Redirect into Student Show by clicked ID --}}
-      <a href="{{ route('student.show', ['id' => $student['id'] ]) }}" class="student">
+      <a href="{{ route('student.show', ['slug' => $student['slug'] ]) }}" class="student">
         <header>
           <img class="rounded-circle" src="{{ $student['img'] }}" alt="{{ $student['nome'] }}">
           <div class="info mt-3">

@@ -24,10 +24,10 @@ class StudentController extends Controller
     }
 
     //Show Students Info page
-    public function show($id){
+    public function show($slug){
 
         //Declare the variable to use with compact
-        $student = $this->searchstudent($id,$this->students);
+        $student = $this->searchstudent($slug,$this->students);
 
         // Check on Student ID
         if (! $student) {
@@ -42,7 +42,7 @@ class StudentController extends Controller
     // Check Students exists by id
     private function  searchStudent($id, $array){
         foreach($array as $student){
-            if($id == $student['id']){
+            if($id == $student['slug']){
                 return $student;
             }
         }

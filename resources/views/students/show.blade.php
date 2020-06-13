@@ -9,7 +9,7 @@
   {{-- @dump($students) --}}
 
 
-  <div href="{{ route('student.show', ['id' => $student['id'] ]) }}" class="student text-center">
+  <div href="{{ route('student.show', ['slug' => $student['slug'] ]) }}" class="student text-center">
     <header>
       <img class="rounded-circle" src="{{ $student['img'] }}" alt="{{ $student['nome'] }}">
       <div class="info mt-5">
