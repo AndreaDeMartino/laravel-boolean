@@ -43,9 +43,9 @@ class StudentController extends Controller
     //-- UTILITIES --//
     
     // Check Students exists by id
-    private function  searchStudent($id, $array){
+    private function  searchStudent($slug, $array){
         foreach($array as $student){
-            if($id == $student['slug']){
+            if($slug == $student['slug']){
                 return $student;
             }
         }
