@@ -7,7 +7,7 @@
   {{-- Students Filter --}}
 
   <div class="students-filter my-3 text-center">
-    <select name="filter" id="filter">
+    <select class= "browser-default custom-select" name="filter" id="filter">
       @foreach($genders as $gender)
       <option value="{{ $gender }}"> 
         @if ($gender == 'all')
@@ -43,6 +43,9 @@
       </a>
     @endforeach
   </div>
+
+  {{-- Handlebars --}}
+  @include('shared.handlebars.student')
 
 @endsection
 

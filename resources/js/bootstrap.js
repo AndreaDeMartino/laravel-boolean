@@ -1,6 +1,7 @@
 // window._ = require('lodash');
 window.$ = require('jquery');
 
+window.Handlebars = require('handlebars');
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
