@@ -24,5 +24,7 @@
   </nav>
 </footer>
 
+@yield('scripts')
+
 </body>
 </html>

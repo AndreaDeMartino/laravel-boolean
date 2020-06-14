@@ -6,7 +6,7 @@
 
   {{-- Students Filter --}}
 
-  <div class="students-filter">
+  <div class="students-filter my-3 text-center">
     <select name="filter" id="filter">
       @foreach($genders as $gender)
       <option value="{{ $gender }}"> 
@@ -44,4 +44,9 @@
     @endforeach
   </div>
 
+@endsection
+
+{{-- Add my scripts only in this page --}}
+@section('scripts')
+  <script src="{{ asset('js/app.js') }}"></script>
 @endsection
